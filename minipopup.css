@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+div.popup {
+  font-family: "Open Sans", sans-serif;
+  background: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  max-width: 400px;
+  width: 350px;
+  max-height: 180px;
+  height: 150px;
+  display: block;
+}
+div.popup .info {
+  margin: 10px;
+  width: 60%;
+  height: 80px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+div.popup .info h1, div.popup .info h2, div.popup .info h3, div.popup .info h4, div.popup .info h5, div.popup .info h6 {
+  margin-left: 5px;
+  font-size: 19px;
+  font-weight: bold;
+  color: black;
+}
+div.popup .info p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 5px;
+}
+div.popup img {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  max-width: 110px;
+  max-height: 110px;
+}
+div.popup a {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  padding: 8px;
+  background: #898e1e;
+  color: white;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+}
+div.popup a:hover, div.popup a:focus {
+  background: #343436;
+  text-decoration: none;
+}
+div.popup i {
+  font-size: 20px;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  cursor: pointer;
+  transition: text-shadow 0.2s;
+}
+div.popup i:hover {
+  text-shadow: 0 3px 2px gray;
+}
+@media screen and (max-width: 800px) {
+  div.popup {
+    display: none;
+  }
+}
